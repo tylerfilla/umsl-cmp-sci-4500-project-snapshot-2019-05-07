@@ -9,6 +9,7 @@ project(cozmonaut)
 add_subdirectory(third_party/linenoise-cmake)
 
 set(cozmo_SRC_FILES
+        src/console.c
         src/main.c
         src/service.c
         )
