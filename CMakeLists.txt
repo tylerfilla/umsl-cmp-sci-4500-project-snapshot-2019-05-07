@@ -10,6 +10,7 @@ add_subdirectory(third_party/linenoise-cmake)
 
 set(cozmo_SRC_FILES
         src/main.c
+        src/service.c
         )
 
 add_executable(cozmo ${cozmo_SRC_FILES})
