@@ -46,8 +46,8 @@ struct service_iface {
   /** The stop callback. */
   int (* on_stop)(struct service* svc);
 
-  /** Call into a service. */
-  int (* on_call)(struct service* svc, int fn, const void* arg1, void* arg2);
+  /** Obtain a service procedure. */
+  int (* (* proc)(struct service* svc, int fn))(const void*, void*);
 };
 
 /**
